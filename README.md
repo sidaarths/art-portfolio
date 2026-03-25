@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Art Portfolio
+
+A personal art portfolio website built with Next.js 16, React 19, and Tailwind CSS v4. Displays work across six categories with a lightbox gallery viewer and animated page transitions.
+
+## Features
+
+- **Gallery** — browse artwork by category with a fullscreen lightbox viewer
+- **Six categories** — Paintings, Digital Art, Drawings, Sketches, Sculptures, Animation
+- **Animated transitions** — smooth page transitions and entrance animations via Framer Motion
+- **Optimised images** — automatic AVIF/WebP conversion via Next.js Image
+- **Responsive** — works on desktop and mobile
+
+## Tech Stack
+
+<!-- AUTO-GENERATED -->
+| Concern | Choice | Version |
+|---|---|---|
+| Framework | Next.js (App Router) | 16.1.6 |
+| Language | TypeScript | 5 |
+| Styling | Tailwind CSS | 4 |
+| Animations | Framer Motion | 12.35.1 |
+| Lightbox | yet-another-react-lightbox | 3.29.1 |
+| Icons | lucide-react | 0.577.0 |
+<!-- /AUTO-GENERATED -->
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+<!-- AUTO-GENERATED -->
+- Node.js 18 or higher
+- npm (comes with Node.js)
+<!-- /AUTO-GENERATED -->
+
+### Setup
 
 ```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<!-- AUTO-GENERATED -->
+| Script | Purpose |
+|--------|---------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Production build |
+| `npm start` | Start production server (requires `npm run build` first) |
+<!-- /AUTO-GENERATED -->
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/                        # Next.js App Router pages
+│   ├── page.tsx                # Home — hero + featured works
+│   ├── about/page.tsx          # About page
+│   └── gallery/
+│       ├── page.tsx            # All categories
+│       ├── [category]/page.tsx # Category listing
+│       └── [category]/[slug]/page.tsx  # Individual artwork
+├── components/
+│   ├── gallery/                # ArtworkCard, ArtworkGrid, CategoryCard
+│   ├── home/                   # HeroSection, FeaturedWorks
+│   └── layout/                 # Header, Footer, PageTransition, TextureOverlay
+├── data/
+│   ├── artworks.ts             # Artwork definitions
+│   └── categories.ts           # Category definitions
+├── lib/
+│   └── utils.ts                # Shared utilities
+└── types/
+    └── artwork.ts              # TypeScript interfaces
+```
