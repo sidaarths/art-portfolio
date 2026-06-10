@@ -1,11 +1,13 @@
+'use client';
+
 import Link from 'next/link';
-import { Instagram, Youtube, Globe } from 'lucide-react';
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer
       className="relative z-10 border-t mt-24"
-      style={{ borderColor: '#2B2118', backgroundColor: '#0D0906' }}
+      style={{ borderColor: '#1C0A04', backgroundColor: '#0A0705' }}
     >
       <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Name */}
@@ -13,7 +15,7 @@ export function Footer() {
           className="text-sm tracking-widest uppercase"
           style={{
             fontFamily: 'var(--font-cormorant), Georgia, serif',
-            color: '#8B7D6B',
+            color: '#9E8060',
             letterSpacing: '0.2em',
           }}
         >
@@ -22,36 +24,25 @@ export function Footer() {
 
         {/* Social links */}
         <div className="flex items-center gap-5">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="transition-colors hover:text-ochre"
-            style={{ color: '#8B7D6B' }}
-          >
-            <Instagram size={18} />
-          </a>
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-            className="transition-colors hover:text-ochre"
-            style={{ color: '#8B7D6B' }}
-          >
-            <Youtube size={18} />
-          </a>
-          <a
-            href="https://behance.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Portfolio"
-            className="transition-colors hover:text-ochre"
-            style={{ color: '#8B7D6B' }}
-          >
-            <Globe size={18} />
-          </a>
+          {([
+            { href: 'https://www.instagram.com/yukillinn', label: 'Instagram', Icon: Instagram },
+            { href: 'https://www.linkedin.com/in/yukillinn', label: 'LinkedIn', Icon: Linkedin },
+            { href: 'mailto:itsactuallyzavian@gmail.com', label: 'Email', Icon: Mail },
+          ] as const).map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target={href.startsWith('mailto:') ? undefined : '_blank'}
+              rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+              aria-label={label}
+              className="transition-all"
+              style={{ color: '#9E8060' }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#D4A020'; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = '#9E8060'; }}
+            >
+              <Icon size={18} />
+            </a>
+          ))}
         </div>
 
         {/* Nav links */}
@@ -59,15 +50,16 @@ export function Footer() {
           {[
             { href: '/', label: 'Home' },
             { href: '/gallery', label: 'Gallery' },
+            { href: '/still-life', label: 'Still Life' },
             { href: '/about', label: 'About' },
           ].map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-xs tracking-widest uppercase transition-colors hover:opacity-70"
+              className="text-xs tracking-widest uppercase transition-opacity hover:opacity-70"
               style={{
                 fontFamily: 'var(--font-cormorant), Georgia, serif',
-                color: '#8B7D6B',
+                color: '#9E8060',
                 letterSpacing: '0.12em',
               }}
             >

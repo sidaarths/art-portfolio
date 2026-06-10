@@ -8,6 +8,7 @@ import { Menu, X } from 'lucide-react';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/gallery', label: 'Gallery' },
+  { href: '/still-life', label: 'Still Life' },
   { href: '/about', label: 'About' },
 ];
 
@@ -19,19 +20,19 @@ export function Header() {
     <header
       className="fixed top-0 left-0 right-0 z-30 border-b"
       style={{
-        backgroundColor: 'rgba(13, 9, 6, 0.92)',
-        borderColor: '#2B2118',
-        backdropFilter: 'blur(4px)',
+        backgroundColor: 'rgba(10, 7, 5, 0.93)',
+        borderColor: '#1C0A04',
+        backdropFilter: 'blur(8px)',
       }}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
-          className="font-display text-2xl tracking-widest aged-text transition-opacity hover:opacity-70"
+          className="font-display text-2xl tracking-widest aged-text transition-opacity hover:opacity-75"
           style={{
             fontFamily: 'var(--font-playfair), Georgia, serif',
-            color: '#E8DCCC',
+            color: '#D4A020',
             letterSpacing: '0.25em',
             textTransform: 'uppercase',
           }}
@@ -48,8 +49,8 @@ export function Header() {
               className="text-sm tracking-widest uppercase transition-colors"
               style={{
                 fontFamily: 'var(--font-cormorant), Georgia, serif',
-                color: pathname === href ? '#CC7722' : '#8B7D6B',
-                borderBottom: pathname === href ? '1px solid #CC7722' : '1px solid transparent',
+                color: pathname === href ? '#B84020' : '#9E8060',
+                borderBottom: pathname === href ? '1px solid #B84020' : '1px solid transparent',
                 paddingBottom: '2px',
                 letterSpacing: '0.15em',
               }}
@@ -64,7 +65,7 @@ export function Header() {
           className="md:hidden p-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
-          style={{ color: '#8B7D6B' }}
+          style={{ color: '#9E8060' }}
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -74,7 +75,7 @@ export function Header() {
       {menuOpen && (
         <div
           className="md:hidden px-6 pb-6 pt-2 flex flex-col gap-5"
-          style={{ borderTop: '1px solid #2B2118' }}
+          style={{ borderTop: '1px solid #1C0A04' }}
         >
           {navLinks.map(({ href, label }) => (
             <Link
@@ -84,7 +85,7 @@ export function Header() {
               className="text-base tracking-widest uppercase"
               style={{
                 fontFamily: 'var(--font-cormorant), Georgia, serif',
-                color: pathname === href ? '#CC7722' : '#8B7D6B',
+                color: pathname === href ? '#B84020' : '#9E8060',
                 letterSpacing: '0.15em',
               }}
             >

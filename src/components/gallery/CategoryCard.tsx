@@ -21,13 +21,7 @@ export function CategoryCard({ category, index = 0 }: CategoryCardProps) {
       transition={{ duration: 0.55, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
       <Link href={`/gallery/${category.slug}`} className="group block">
-        <div
-          className="relative overflow-hidden"
-          style={{
-            backgroundColor: '#1A120B',
-            boxShadow: '3px 3px 0 #0D0906, -1px -1px 0 #2B2118',
-          }}
-        >
+        <div className="relative overflow-hidden phantasmic-card" style={{ backgroundColor: '#180C06' }}>
           {/* Cover image */}
           <div className="relative overflow-hidden" style={{ aspectRatio: '3/2' }}>
             <Image
@@ -35,12 +29,13 @@ export function CategoryCard({ category, index = 0 }: CategoryCardProps) {
               alt={category.label}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-70 group-hover:opacity-90"
+              className="object-cover opacity-70 group-hover:opacity-90 card-image"
+              style={{ objectPosition: category.coverImagePosition ?? 'center' }}
             />
-            {/* Permanent dark overlay */}
+            {/* Permanent overlay — warm umber tinted */}
             <div
               className="absolute inset-0"
-              style={{ background: 'linear-gradient(to top, rgba(13,9,6,0.8) 0%, rgba(13,9,6,0.2) 60%)' }}
+              style={{ background: 'linear-gradient(to top, rgba(10,7,5,0.88) 0%, rgba(122,62,24,0.15) 60%, transparent 100%)' }}
             />
           </div>
 
@@ -48,16 +43,13 @@ export function CategoryCard({ category, index = 0 }: CategoryCardProps) {
           <div className="absolute bottom-0 left-0 right-0 p-5">
             <h2
               className="text-xl aged-text"
-              style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
-                color: '#E8DCCC',
-              }}
+              style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#F5E8D5' }}
             >
               {category.label}
             </h2>
             <p
               className="text-xs mt-1 tracking-widest uppercase"
-              style={{ color: '#8B7D6B', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.1em' }}
+              style={{ color: '#D4A020', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.1em' }}
             >
               {count} {count === 1 ? 'work' : 'works'}
             </p>

@@ -17,18 +17,18 @@ export function FeaturedWorks() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="flex items-end justify-between mb-12 pb-6 border-b"
-        style={{ borderColor: '#2B2118' }}
+        style={{ borderColor: '#1C0A04' }}
       >
         <div>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-3"
-            style={{ color: '#6B3A2A', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
+            style={{ color: '#B84020', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
           >
             Selected Works
           </p>
           <h2
             className="text-3xl md:text-4xl aged-text"
-            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#E8DCCC' }}
+            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#F5E8D5' }}
           >
             Featured
           </h2>
@@ -37,7 +37,7 @@ export function FeaturedWorks() {
         <Link
           href="/gallery"
           className="text-xs tracking-widest uppercase transition-opacity hover:opacity-70 hidden md:block"
-          style={{ color: '#8B7D6B', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.15em' }}
+          style={{ color: '#9E8060', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.15em' }}
         >
           View all →
         </Link>
@@ -55,7 +55,7 @@ export function FeaturedWorks() {
         <Link
           href="/gallery"
           className="text-xs tracking-widest uppercase"
-          style={{ color: '#8B7D6B', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.15em' }}
+          style={{ color: '#9E8060', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.15em' }}
         >
           View all works →
         </Link>
