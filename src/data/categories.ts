@@ -5,7 +5,7 @@ export const categories: Category[] = [
     slug: 'eerie-chills',
     label: 'Eerie Chills',
     description: 'Unsettling imagery that lingers — portraits of dread, hypnotic tension, and the uncanny.',
-    coverImage: '/art/eerie-chills/hypnosis-motion.jpeg',
+    coverImage: '/art/eerie-chills/hypnosis.jpeg',
   },
   {
     slug: 'familiar-warmth',
@@ -29,7 +29,7 @@ export const categories: Category[] = [
     slug: 'the-peacekeeper',
     label: 'The Peacekeeper',
     description: 'A world-building series pitch — celestial warriors, warring nations, and a map of conflict.',
-    coverImage: '/art/the-peacekeeper/iathorial.png',
+    coverImage: '/art/the-peacekeeper/careless-leisure.png',
   },
   {
     slug: 'the-privileged-and-the-poor',

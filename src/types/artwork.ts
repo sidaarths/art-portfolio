@@ -22,6 +22,7 @@ export interface Artwork {
   featured: boolean;
   order: number;
   videoUrl?: string;
+  objectPosition?: string;
 }
 
 export interface Category {
@@ -29,4 +30,5 @@ export interface Category {
   label: string;
   description: string;
   coverImage: string;
+  coverImagePosition?: string;
 }

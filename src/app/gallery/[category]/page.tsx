@@ -39,30 +39,36 @@ export default async function CategoryPage({ params }: Props) {
         <Link
           href="/gallery"
           className="inline-flex items-center gap-2 text-xs tracking-widest uppercase mb-10 transition-opacity hover:opacity-70"
-          style={{ color: '#8B7D6B', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.12em' }}
+          style={{ color: '#9E8060', fontFamily: 'var(--font-cormorant), Georgia, serif', letterSpacing: '0.12em' }}
         >
           <ChevronLeft size={14} />
           All Categories
         </Link>
 
         {/* Header */}
-        <div className="mb-14 border-b pb-10" style={{ borderColor: '#2B2118' }}>
+        <div className="mb-14 border-b pb-10" style={{ borderColor: '#1C0A04' }}>
+          <p
+            className="text-xs tracking-[0.4em] uppercase mb-4"
+            style={{ color: '#B84020', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
+          >
+            Category
+          </p>
           <h1
             className="text-5xl md:text-6xl aged-text mb-4"
-            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#E8DCCC' }}
+            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#F5E8D5' }}
           >
             {cat.label}
           </h1>
           <p
             className="text-base max-w-xl"
-            style={{ fontFamily: 'var(--font-lora), Georgia, serif', color: '#8B7D6B', lineHeight: '1.8' }}
+            style={{ fontFamily: 'var(--font-lora), Georgia, serif', color: '#9E8060', lineHeight: '1.8' }}
           >
             {cat.description}
           </p>
         </div>
 
         {artworks.length === 0 ? (
-          <p style={{ color: '#8B7D6B', fontFamily: 'var(--font-lora), Georgia, serif' }}>
+          <p style={{ color: '#9E8060', fontFamily: 'var(--font-lora), Georgia, serif' }}>
             No works in this category yet.
           </p>
         ) : (

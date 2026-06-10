@@ -8,19 +8,53 @@ export function HeroSection() {
   return (
     <section
       className="relative min-h-[85vh] flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: '#0D0906' }}
+      style={{ backgroundColor: '#0A0705' }}
     >
-      {/* Background texture pattern */}
+      {/* Concentric rings — warm amber-brown Op Art background */}
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 2px,
-            rgba(107, 58, 42, 0.15) 2px,
-            rgba(107, 58, 42, 0.15) 3px
+          backgroundImage: `repeating-radial-gradient(
+            circle at 50% 50%,
+            transparent 0,
+            transparent 38px,
+            rgba(122, 62, 24, 0.10) 38px,
+            rgba(122, 62, 24, 0.10) 39px
           )`,
+          transform: 'scale(1.4)',
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Conic rays overlay — terracotta and umber */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `conic-gradient(
+            from 0deg at 50% 50%,
+            transparent 0deg,
+            rgba(184, 64, 32, 0.08) 25deg,
+            transparent 50deg,
+            rgba(122, 62, 24, 0.06) 95deg,
+            transparent 115deg,
+            rgba(184, 64, 32, 0.06) 155deg,
+            transparent 175deg,
+            rgba(122, 62, 24, 0.08) 215deg,
+            transparent 235deg,
+            rgba(184, 64, 32, 0.06) 275deg,
+            transparent 295deg,
+            rgba(122, 62, 24, 0.06) 335deg,
+            transparent 360deg
+          )`,
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Radial vignette */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse at center, transparent 40%, rgba(10, 7, 5, 0.8) 100%)',
         }}
         aria-hidden="true"
       />
@@ -31,8 +65,13 @@ export function HeroSection() {
         aria-hidden="true"
       >
         <span
-          className="text-[30vw] font-bold opacity-[0.03]"
-          style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#CC7722', lineHeight: 1 }}
+          className="text-[30vw] font-bold"
+          style={{
+            fontFamily: 'var(--font-playfair), Georgia, serif',
+            color: 'transparent',
+            WebkitTextStroke: '1px rgba(212, 160, 32, 0.07)',
+            lineHeight: 1,
+          }}
         >
           Z
         </span>
@@ -46,8 +85,8 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         >
           <p
-            className="text-xs tracking-[0.4em] uppercase mb-8"
-            style={{ color: '#6B3A2A', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
+            className="text-xs tracking-[0.5em] uppercase mb-8"
+            style={{ color: '#B84020', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
           >
             Artist Portfolio
           </p>
@@ -62,7 +101,7 @@ export function HeroSection() {
             className="text-[14vw] md:text-[10vw] lg:text-[8rem] aged-text leading-none mb-8"
             style={{
               fontFamily: 'var(--font-playfair), Georgia, serif',
-              color: '#E8DCCC',
+              color: '#D4A020',
               letterSpacing: '-0.02em',
             }}
           >
@@ -75,18 +114,31 @@ export function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          {/* Ornamental divider */}
-          <div className="flex items-center justify-center gap-4 mb-8" aria-hidden="true">
-            <div className="h-px w-16" style={{ backgroundColor: '#3D1F10' }} />
-            <div className="w-1.5 h-1.5 rotate-45" style={{ backgroundColor: '#6B3A2A' }} />
-            <div className="h-px w-16" style={{ backgroundColor: '#3D1F10' }} />
+          {/* Ornamental divider — glowing warm dots */}
+          <div className="flex items-center justify-center gap-2 mb-8" aria-hidden="true">
+            <div className="h-px w-12" style={{ backgroundColor: '#1C0A04' }} />
+            <div
+              className="w-2 h-2 rounded-full"
+              style={{ backgroundColor: '#B84020', boxShadow: '0 0 8px rgba(184, 64, 32, 0.9)' }}
+            />
+            <div className="h-px w-4" style={{ backgroundColor: '#2E1608' }} />
+            <div
+              className="w-1 h-1 rounded-full"
+              style={{ backgroundColor: '#D4A020', boxShadow: '0 0 6px rgba(212, 160, 32, 0.7)' }}
+            />
+            <div className="h-px w-4" style={{ backgroundColor: '#2E1608' }} />
+            <div
+              className="w-2 h-2 rounded-full"
+              style={{ backgroundColor: '#B84020', boxShadow: '0 0 8px rgba(184, 64, 32, 0.9)' }}
+            />
+            <div className="h-px w-12" style={{ backgroundColor: '#1C0A04' }} />
           </div>
 
           <p
             className="text-base md:text-lg max-w-lg mx-auto mb-12"
             style={{
               fontFamily: 'var(--font-lora), Georgia, serif',
-              color: '#8B7D6B',
+              color: '#9E8060',
               lineHeight: '1.9',
               fontStyle: 'italic',
             }}
@@ -100,18 +152,18 @@ export function HeroSection() {
             className="inline-flex items-center gap-3 px-8 py-4 text-sm tracking-widest uppercase transition-all group border"
             style={{
               fontFamily: 'var(--font-cormorant), Georgia, serif',
-              color: '#D4C4AE',
-              borderColor: '#3D1F10',
+              color: '#F5E8D5',
+              borderColor: '#B84020',
               backgroundColor: 'transparent',
               letterSpacing: '0.2em',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.backgroundColor = '#1A120B';
-              (e.currentTarget as HTMLElement).style.borderColor = '#6B3A2A';
+              (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(184, 64, 32, 0.12)';
+              (e.currentTarget as HTMLElement).style.boxShadow = '0 0 25px rgba(184, 64, 32, 0.4)';
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
-              (e.currentTarget as HTMLElement).style.borderColor = '#3D1F10';
+              (e.currentTarget as HTMLElement).style.boxShadow = 'none';
             }}
           >
             View Gallery

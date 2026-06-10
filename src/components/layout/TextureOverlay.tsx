@@ -18,8 +18,7 @@ export function TextureOverlay() {
       <div
         className="pointer-events-none fixed inset-0 z-40"
         style={{
-          background:
-            'radial-gradient(ellipse at center, transparent 50%, rgba(13,9,6,0.7) 100%)',
+          background: 'radial-gradient(ellipse at center, transparent 50%, rgba(10, 7, 5, 0.65) 100%)',
         }}
         aria-hidden="true"
       />

@@ -13,16 +13,22 @@ export default function GalleryPage() {
     <PageTransition>
       <div className="max-w-6xl mx-auto px-6 py-16">
         {/* Header */}
-        <div className="mb-14 border-b pb-10" style={{ borderColor: '#2B2118' }}>
+        <div className="mb-14 border-b pb-10" style={{ borderColor: '#1C0A04' }}>
+          <p
+            className="text-xs tracking-[0.4em] uppercase mb-4"
+            style={{ color: '#B84020', fontFamily: 'var(--font-cormorant), Georgia, serif' }}
+          >
+            All Works
+          </p>
           <h1
             className="text-5xl md:text-6xl aged-text mb-4"
-            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#E8DCCC' }}
+            style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#F5E8D5' }}
           >
             Gallery
           </h1>
           <p
             className="text-base max-w-xl"
-            style={{ fontFamily: 'var(--font-lora), Georgia, serif', color: '#8B7D6B', lineHeight: '1.8' }}
+            style={{ fontFamily: 'var(--font-lora), Georgia, serif', color: '#9E8060', lineHeight: '1.8' }}
           >
             A collection of works spanning multiple disciplines — each a study in material, light, and form.
           </p>
@@ -33,6 +39,7 @@ export default function GalleryPage() {
           {categories.map((category, i) => (
             <CategoryCard key={category.slug} category={category} index={i} />
           ))}
+
         </div>
       </div>
     </PageTransition>
