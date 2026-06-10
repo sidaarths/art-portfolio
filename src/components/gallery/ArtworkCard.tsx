@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { Play } from 'lucide-react';
 import type { Artwork } from '@/types/artwork';
 
 interface ArtworkCardProps {
@@ -33,6 +34,16 @@ export function ArtworkCard({ artwork, onClick, index = 0 }: ArtworkCardProps) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           placeholder="empty"
         />
+        {/* Video badge */}
+        {artwork.videoUrl && (
+          <div
+            className="absolute top-2 right-2 flex items-center gap-1 px-2 py-1 rounded-sm z-10"
+            style={{ backgroundColor: 'rgba(13,9,6,0.75)', color: '#D4C4AE' }}
+          >
+            <Play size={10} fill="currentColor" />
+            <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', fontFamily: 'var(--font-cormorant), Georgia, serif' }}>VIDEO</span>
+          </div>
+        )}
         {/* Hover overlay */}
         <div
           className="absolute inset-0 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

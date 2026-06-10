@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
+import Video from 'yet-another-react-lightbox/plugins/video';
 import 'yet-another-react-lightbox/styles.css';
 import { ArtworkCard } from './ArtworkCard';
 import type { Artwork } from '@/types/artwork';
@@ -13,7 +14,15 @@ interface ArtworkGridProps {
 export function ArtworkGrid({ artworks }: ArtworkGridProps) {
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
-  const slides = artworks.map((a) => ({ src: a.image, alt: a.title }));
+  const slides = artworks.map((a) =>
+    a.videoUrl
+      ? {
+          type: 'video' as const,
+          poster: a.image,
+          sources: [{ src: a.videoUrl, type: 'video/mp4' }],
+        }
+      : { src: a.image, alt: a.title }
+  );
 
   return (
     <>
@@ -33,6 +42,7 @@ export function ArtworkGrid({ artworks }: ArtworkGridProps) {
         index={lightboxIndex}
         close={() => setLightboxIndex(-1)}
         slides={slides}
+        plugins={[Video]}
         styles={{
           container: { backgroundColor: 'rgba(13, 9, 6, 0.97)' },
         }}

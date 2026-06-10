@@ -1,10 +1,10 @@
 export type ArtworkCategory =
-  | 'paintings'
-  | 'digital-art'
-  | 'drawings'
-  | 'sketches'
-  | 'sculptures'
-  | 'animation';
+  | 'eerie-chills'
+  | 'familiar-warmth'
+  | 'figure-drawing'
+  | 'sunshine-daisies'
+  | 'the-peacekeeper'
+  | 'the-privileged-and-the-poor';
 
 export interface Artwork {
   id: string;
@@ -15,6 +15,8 @@ export interface Artwork {
   year: number;
   dimensions?: string;
   description: string;
+  altText?: string;
+  caption?: string;
   image: string;
   thumbnail?: string;
   featured: boolean;
