@@ -13,7 +13,7 @@ export const artworks: Artwork[] = [
     description: 'The discomfort of being seen — a figure exposed under the weight of anonymous eyes.',
     altText: 'A clay sculpture of a hunched figure conveying discomfort in a public space, paired with Intimate',
     caption:
-      'Public and private space can be subjective, an example of which is my piece. Individuals that have bowel issues, are queer or even victims can find it difficult to walk into a public bathroom carrying that eerie discomfort felt before while in contrast walk with a pep in their step as they use a comfortable warm one at home. (Paired with Intimate)',
+      'Public and private spaces can evoke vastly different feelings. This piece reflects the discomfort that individuals with bowel conditions, queer individuals, or trauma survivors may experience when entering a public restroom, contrasted with the comfort and security of a familiar one at home. (Paired with Intimate.)',
     image: '/art/eerie-chills/unknown-cover.jpg',
     featured: true,
     order: 1,
@@ -29,7 +29,7 @@ export const artworks: Artwork[] = [
     description: 'An unblinking confrontation — who breaks first? The tension hangs like a held breath.',
     altText: 'A penguin and a person locked in an intense staring contest, bathed in a blue eerie atmosphere',
     caption:
-      'This moment describes a time I spent in the local zoo where a penguin actively initiated a staring contest with me. I had to capture this chilling instance and the blue represents the gradual eerie atmosphere I experienced at the time.',
+      'This piece captures a moment from a visit to a local zoo, where a penguin unexpectedly initiated what felt like a staring contest. The gradual shift toward blue tones reflects the strangely eerie atmosphere that accompanied the encounter.',
     image: '/art/eerie-chills/the-staredown.jpg',
     featured: false,
     order: 2,
@@ -45,7 +45,7 @@ export const artworks: Artwork[] = [
     description: 'Stillness captured mid-spiral. The eye follows, and keeps following.',
     altText: 'A polymer clay spinning top shaped like a hypnosis wheel, mid-spin',
     caption:
-      'Another piece in the "Chills" series is my attempt on a hypnosis wheel but instead in a spinning top format. The idea that people can possibly be deactivated and influenced to make dangerous decisions surely sends chills down my spine.',
+      'Part of my “Chills” series, this piece reimagines a hypnosis wheel as a spinning top. The possibility of people being influenced or manipulated into making harmful decisions is an unsettling idea that inspired the work.',
     image: '/art/eerie-chills/hypnosis.jpeg',
     videoUrl: '/art/eerie-chills/in-motion.mp4',
     featured: false,
@@ -64,7 +64,7 @@ export const artworks: Artwork[] = [
     description: 'A quiet retreat into the self — the small act of disappearing into something safe.',
     altText: 'An air-dry clay sculpture of a figure immersed in the warm glow of a cinema screen',
     caption:
-      'This piece is the foundation of my message for the future. I want to be able to provide other people with an escape from reality during harsh times through cinema. Reminding people of the warmth that they felt where in past memories or imagination offers a little helping hand of strength.',
+      'This piece serves as the foundation of the message I hope to carry into my future work. Through cinema, I want to provide people with an escape during difficult times, reminding them of the warmth found in cherished memories and imagination, and offering a small source of comfort and strength.',
     image: '/art/familiar-warmth/escape-reality.jpg',
     featured: true,
     order: 1,
@@ -80,7 +80,7 @@ export const artworks: Artwork[] = [
     description: 'Closeness rendered in warmth — the kind of moment you want to stretch into hours.',
     altText: 'A clay sculpture of a relaxed figure at ease in a warm private space, paired with Unknown',
     caption:
-      'Public and private space can be subjective, an example of which is my piece. Individuals that have bowel issues, are queer or even victims can find it difficult to walk into a public bathroom carrying that eerie discomfort felt before while in contrast walk with a pep in their step as they use a comfortable warm one at home. (Paired with Unknown)',
+      'Public and private spaces can evoke vastly different feelings. This piece reflects the comfort and sense of safety found in familiar personal spaces, contrasted with the unease that some individuals may feel in public environments. (Paired with Unknown.)',
     image: '/art/familiar-warmth/intimate-cover.jpg',
     featured: false,
     order: 2,
@@ -96,7 +96,7 @@ export const artworks: Artwork[] = [
     description: 'What we hold carefully. What holds us in return.',
     altText: 'A polymer clay sculpture of a mother snake coiled protectively around her young',
     caption:
-      "My new interest in snakes led to this piece. Grounded by the fight or flight instinct the snake protects its young from danger. While some may find snakes terrifying, that is not the message that this piece is meant to send, ultimately maternal love is warm even if it's from a cold-blooded animal.",
+      'My growing interest in snakes inspired this piece. Driven by instinct, the snake protects its young from danger. While many people view snakes with fear, the focus of this work is maternal love and the warmth of parental care, even from a cold-blooded animal.',
     image: '/art/familiar-warmth/precious.jpg',
     featured: false,
     order: 3,
@@ -114,7 +114,7 @@ export const artworks: Artwork[] = [
     description: 'A riff on divine creation — but the miracle here is rest, unguarded and unapologetic.',
     altText: "An oil painting of two cats recreating Michelangelo's The Creation of Adam while sunbathing",
     caption:
-      "This painting depicts a naive moment where my cats recreate Michaelangelo's The Creation of Adam while sunbathing on a regular Tuesday.",
+      "This painting depicts a playful moment in which my cats recreate Michelangelo's The Creation of Adam while sunbathing on an otherwise ordinary Tuesday afternoon.",
     image: '/art/figure-drawing/the-creation-of-naps.jpg',
     featured: false,
     order: 1,
@@ -130,7 +130,7 @@ export const artworks: Artwork[] = [
     description: 'A loose, expressive figure study — gesture over precision, mood over measurement.',
     altText: 'A charcoal drawing of a figure smoking, the dark medium evoking the blackening effects on the lungs',
     caption:
-      "The aesthetic nature of smoking that is showcased in the media doesn't tell the whole story. Charcoal displays the blackening of the lungs that smoking causes as it diminishes the smoker's health.",
+      "The aesthetic portrayal of smoking in popular media often overlooks its consequences. Through the use of charcoal, this piece references the damage smoking causes to the lungs and the gradual decline of a smoker's health. This piece references a well-renowned actor's shoot who is often seen in the middle of such media.",
     image: '/art/figure-drawing/for-the-vibes.jpg',
     featured: false,
     order: 2,
@@ -146,7 +146,7 @@ export const artworks: Artwork[] = [
     description: 'The face that says everything without saying a word. Unapologetic and perfectly composed.',
     altText: 'An oil paint portrait of a woman with a composed resting expression in her favorite colors red and green',
     caption:
-      "This portrait was a present for my mother's birthday, hinting at an inside joke about her resting face and incorporating her favorite colors red and green.",
+      'This portrait was created as a birthday gift for my mother. It references an inside joke about her resting expression while incorporating her favorite colors, red and green.',
     image: '/art/figure-drawing/rbf.jpg',
     featured: false,
     order: 3,
@@ -162,7 +162,7 @@ export const artworks: Artwork[] = [
     description: 'Posture as language. The quiet authority of a figure at ease in their own skin.',
     altText: 'A pastel figure drawing of a woman striking a dynamic pose with clean, flowing lines',
     caption:
-      'With the mindset of wanting to portray the beauty and elegance of the human body, this figure drawing portrays a woman striking a dynamic pose with clean lines.',
+      'Created with the intention of portraying the beauty and elegance of the human form, this figure drawing captures a woman in a dynamic pose using confident lines and expressive movement.',
     image: '/art/figure-drawing/elegance-extensions.jpg',
     featured: false,
     order: 4,
@@ -178,7 +178,7 @@ export const artworks: Artwork[] = [
     description: 'Confidence drawn from the inside out. The figure knows exactly who he is.',
     altText: 'A pastel and acrylic figure drawing of a confident male model radiating self-assurance',
     caption:
-      'This is one of my favourite pieces. I wanted to showcase the enjoyment the model had for his job and the fact that he was exactly who he thought he was at that moment.',
+      'This is one of my favorite pieces. I wanted to capture the enjoyment the model felt in his role and the confidence he carried in that moment, fully embracing who he believed himself to be.',
     image: '/art/figure-drawing/ooo-hes-eating-purr.jpg',
     featured: true,
     order: 5,
@@ -197,7 +197,7 @@ export const artworks: Artwork[] = [
     altText:
       'A digital illustration of a Serval hybrid in satin pajamas crouching alone in a corner, depicting the solitary nature of depression',
     caption:
-      'The inspiration behind this digital piece was depression and as someone that suffers from it, the world feels like a challenge that you take on yourself often causing comfort to come from retreating. The use of a Serval as the hybrid base due to their solitary nature depicts the lonely battle and the satin pajamas he wears while crouching into a corner shows the comfort in that retreat.',
+      'This digital piece was inspired by my experience with depression. At times, the world can feel overwhelming, and making retreat as well as isolation seem comforting. The serval, chosen for its solitary nature, symbolizes this struggle, while the satin pajamas and curled posture emphasize the sense of refuge found in withdrawal.',
     image: '/art/sunshine-daisies/solitude.jpg',
     featured: true,
     order: 1,
@@ -214,7 +214,7 @@ export const artworks: Artwork[] = [
     altText:
       'An ink, pastel, and watercolor piece of a figure in a corner with fragmented color illustrating derealization',
     caption:
-      'This piece takes inspiration from the mental condition, De-realization where an individual feels a disconnect from the world around them. The use of color to show the disconnection highlights this condition.',
+      'This piece draws inspiration from the condition of derealization, in which an individual experiences a sense of disconnection from the world around them. The use of color emphasizes this separation and highlights the emotional impact of the condition.',
     image: '/art/sunshine-daisies/the-corner.jpg',
     featured: false,
     order: 2,
@@ -230,7 +230,7 @@ export const artworks: Artwork[] = [
     altText:
       "A digital animation of a father's journey through gambling addiction and recovery, with intentionally rough lines depicting emotional turbulence",
     caption:
-      'This animation talks about a man who we come to find out is addicted to gambling, this man is also a father and upon reminiscing of memories with his family he tries to make a change but sobriety is a journey that may involve relapse. Finally the support that he receives helps him push through to where he achieves sobriety and prioritizes his family. Note: The use of rough lines is intentional to show the emotional state he is in and the fade/blur outs similarly is used to convey the almost drunken mindset he is in once gambling.',
+      'This animation follows a father struggling with a gambling addiction. As he reflects on memories with his family, he attempts to change his life, though recovery is not without setbacks. Through perseverance and support from loved ones, he ultimately achieves sobriety and learns to prioritize his family. The rough linework and fading visual effects are intentional, reflecting his emotional turmoil and the distorted mindset caused by addiction.',
     image: '/art/sunshine-daisies/kakegurui.png',
     videoUrl: '/art/sunshine-daisies/kakegurui.mp4',
     featured: false,
@@ -250,7 +250,7 @@ export const artworks: Artwork[] = [
     altText:
       'A digital character board of two side characters inspired by Tenali Rahman and Ashoka the Great, rivals from opposing nations who fall in love',
     caption:
-      "This character board is of two side characters one inspired by intelligent royal advisor Tenali Rahman and the other of Ashoka the great, a ruthless conqueror that attains enlightenment repenting his past. Both of them having been brought up in rivaling nations without one's knowledge fall in love.",
+      'This character board features two supporting characters. One is inspired by the intelligent royal advisor Tenali Rama, while the other draws inspiration from Ashoka the Great, a ruthless conqueror who later attains enlightenment and repents for his past. Raised in rival nations without knowledge of their connection, the two eventually fall in love.',
     image: '/art/the-peacekeeper/assassins-troop.jpg',
     featured: false,
     order: 1,
@@ -266,7 +266,7 @@ export const artworks: Artwork[] = [
     description: 'A being beyond nations — the celestial arbiter at the heart of the conflict.',
     altText: 'A digital character board of Iathorial, a divine peacekeeper inspired by the Hindu deity Krishna',
     caption:
-      'Iathorial is an original character slightly inspired by a Hindu god, Krishna. She is the peacekeeper of her realm and viewed by others as a divine being of high morality yet we explore her journey of discovery with lots of goofy moments.',
+      'Iathorial is an original character loosely inspired by the Hindu deity Krishna. She serves as the peacekeeper of her realm and is viewed as a divine figure of exceptional morality. Despite this reputation, her story follows a journey of self-discovery filled with both meaningful growth and lighthearted moments.',
     image: '/art/the-peacekeeper/iathorial-the-celestial.jpg',
     featured: false,
     order: 2,
@@ -282,7 +282,7 @@ export const artworks: Artwork[] = [
     description: 'A closer study of Iathorial — the weight of judgment behind the eyes.',
     altText: 'A digital illustration of Iathorial size-shifted and napping peacefully among the trees',
     caption:
-      'Iathorial is illustrated taking a nap during her free time. The original inspiration was the idea that the world can feel so big at times therefore I built off of that to represent her ability to size-shift while enjoying her favorite activity in the woods.',
+      'This illustration depicts Iathorial enjoying a nap during her free time. Inspired by the overwhelming scale of the world around us, the piece explores her ability to change size while relaxing peacefully in the woods.',
     image: '/art/the-peacekeeper/careless-leisure.png',
     featured: false,
     order: 3,
@@ -299,7 +299,7 @@ export const artworks: Artwork[] = [
     altText:
       "A hand-drawn map of Iathorial's universe featuring the nations of Venasla and Vetalica with a charged energy ball at their border",
     caption:
-      "This is a map of the universe I've created for Iathorial's story. It consists of 2 nations: Venasla and Vetalica. Their names are taken from twin characters, a part of a different story in this world which would act as a spin off of this story. The shapes of the nations reference their founding members: Basilisk, Wyvern. The charged energy ball in the centre of the nations is a result of the Great War that took place centuries ago.",
+      "This map depicts the universe created for Iathorial's story. It contains two nations, Venasla and Vetalica, whose names originate from twin characters featured in a separate story set within the same world. The shapes of the nations reference their founding creatures, the Basilisk and Wyvern. The charged energy sphere at the center is the lasting result of the Great War that occurred centuries ago.",
     image: '/art/the-peacekeeper/map.jpg',
     featured: false,
     order: 4,
@@ -316,7 +316,7 @@ export const artworks: Artwork[] = [
     altText:
       'An illustration detailing the sigils and histories of Venasla and Vetalica, and the consequences of their Great War',
     caption:
-      'Further talking about the two nations involved we elaborate on their sigils and its meaning. Next, we move on to the Great War and its consequences.',
+      'This piece expands upon the history of Venasla and Vetalica by exploring their sigils, symbolism, and cultural identities. It also examines the Great War and the lasting consequences it left behind.',
     image: '/art/the-peacekeeper/two-nations.jpg',
     featured: false,
     order: 5,
@@ -331,7 +331,7 @@ export const artworks: Artwork[] = [
     description: 'TOKO in motion — a glimpse into the animated world of The Peacekeeper series.',
     altText: 'A 3D Maya animation of Toko, an orca-inspired familiar with unique fin modifications and unusual coloring',
     caption:
-      "Toko is an original character inspired by an orca that acts as a familiar to the main character, Iathorial. Iathorial's sigil incorporates an orca for authority and a circle for peace. Toko has a few extra fin-like modifications since he is mixed with an unknown parent animal which also causes his odd coloring.",
+      "Toko is an original character inspired by an orca and serves as a familiar to the main character, Iathorial. Her sigil incorporates an orca to symbolize authority and a circle to represent peace. Toko possesses additional fin-like features due to being descended from an unknown species, which also contributes to his unusual coloration.",
     image: '/art/the-peacekeeper/toko-animation.jpg',
     videoUrl: '/art/the-peacekeeper/toko-animation.mp4',
     featured: true,
@@ -351,7 +351,7 @@ export const artworks: Artwork[] = [
     altText:
       'A watercolor painting of a vulture looming over a scapegoat, symbolizing the wealthy preying on and deflecting blame onto the poor',
     caption:
-      'The Vulture represents the rich and their reputation of feeding off the poor as well as using them as Scape goats to take responsibility for their actions.',
+      'The vulture represents the wealthy and the perception that they feed off the labor of the poor while often using them as scapegoats to avoid accountability for their own actions.',
     image: '/art/the-privileged-and-the-poor/the-vulture-and-the-scapegoat.jpg',
     featured: false,
     order: 1,
@@ -367,7 +367,7 @@ export const artworks: Artwork[] = [
     altText:
       'A stop motion animation contrasting a man protecting his clothing over food versus a woman instinctively saving food over clothing, exploring class privilege',
     caption:
-      'This stop motion depicts the difference in what two believe to be treasured and disposable. The man treasures his clothing willing to swat away his food whereas the woman instinctively rushes over to the food, losing her clothing for it. This sheds light on the privilege that certain individuals in society hold over others.',
+      'This stop-motion piece explores how people can value entirely different things. The man treasures his clothing, willingly swatting away his food to protect it, while the woman instinctively rushes toward the food, sacrificing her clothing in the process. The contrast highlights the privileges and priorities shaped by different circumstances in society.',
     image: '/art/the-privileged-and-the-poor/treasure.jpg',
     videoUrl: '/art/the-privileged-and-the-poor/treasure.mp4',
     featured: true,
