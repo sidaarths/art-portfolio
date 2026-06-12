@@ -14,9 +14,8 @@ export interface Artwork {
   medium: string;
   year: number;
   dimensions?: string;
-  description: string;
-  altText?: string;
-  caption?: string;
+  altText: string;
+  caption: string;
   image: string;
   thumbnail?: string;
   featured: boolean;
