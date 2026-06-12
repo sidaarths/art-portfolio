@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!artwork) return {};
   return {
     title: artwork.title,
-    description: artwork.description,
+    description: artwork.caption,
   };
 }
 
@@ -90,7 +90,7 @@ export default async function ArtworkDetailPage({ params }: Props) {
               className="text-base leading-relaxed"
               style={{ color: '#9E8060', fontFamily: 'var(--font-lora), Georgia, serif', lineHeight: '1.9' }}
             >
-              {artwork.description}
+              {artwork.caption}
             </p>
           </div>
         </div>
